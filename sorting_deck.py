@@ -22,7 +22,7 @@ from sort_engine import (run_bubble_sort, run_insertion_sort, run_quick_sort,
 from get_args import get_args
 
 
-def algorithm(alg, numbers):
+def find_algorithm(alg, numbers):
     """
     algorithm(alg, numbers)
 
@@ -49,14 +49,13 @@ def main():
     This is main function.
     """
     numbers, algo, gui = get_args()
+    if len(numbers) < 2:
+        return 0
     if gui:
         if len(numbers) > 15:
             print("Input too large")
             return 0
-    if len(numbers) < 2:
-        return 0
-    algorithm(algo, numbers)
-    return 0
+    find_algorithm(algo, numbers)
 
 
 if __name__ == "__main__":
