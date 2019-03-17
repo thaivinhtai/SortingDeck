@@ -56,6 +56,7 @@ def main():
             print("Input too large")
             return 0
     find_algorithm(algo, numbers)
+    return 0
 
 
 if __name__ == "__main__":
