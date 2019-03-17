@@ -24,7 +24,7 @@ from get_args import get_args
 
 def find_algorithm(alg, numbers):
     """
-    algorithm(alg, numbers)
+    find_algorithm(alg, numbers)
 
     This is a manual switcher for select function quickly.
 
